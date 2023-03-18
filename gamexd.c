@@ -18,9 +18,9 @@ int main() {
     int counter = 0, len, hg;
     setlocale(LC_ALL, "Russian");
     srand(time(NULL));
-    printf("Введите длину мира: ");
+    printf("Р’РІРµРґРёС‚Рµ РґР»РёРЅСѓ РјРёСЂР°: ");
     scanf("%d", &len);
-    printf("Введите высоту мира: ");
+    printf("Р’РІРµРґРёС‚Рµ РІС‹СЃРѕС‚Сѓ РјРёСЂР°: ");
     scanf("%d", &hg);
     system("cls");
 
@@ -48,7 +48,7 @@ int main() {
         for (i = 0; i < hg; i++) {
             printf("%s\n", field[i]);
         }
-        printf("Money received: %d$", counter);
+        printf("РЎРѕР±СЂР°РЅРѕ РґРµРЅРµРі: %d$", counter);
         key = getch();
         if (key == 'w') player_y--;
         if (key == 'a') player_x--;
