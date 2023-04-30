@@ -59,10 +59,21 @@ int main()
         printf("Собрано денег: %d$", counter);
         key = getch();
         
-        if (key == 'w') player_y--;
-        if (key == 'a') player_x--;
-        if (key == 's') player_y++;
-        if (key == 'd') player_x++;
+        switch (key)
+        {
+        case 'w':
+            player_y--;
+            break;
+        case 'a':
+            player_x--;
+            break;
+        case 's':
+            player_y++;
+            break;
+        case 'd':
+            player_x++;
+            break;
+        }
 
         if (player_x == 0) player_x++;
         if (player_x == len - 1) player_x--;
